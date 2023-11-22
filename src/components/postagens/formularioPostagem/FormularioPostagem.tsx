@@ -24,7 +24,7 @@ function FormularioPostagem() {
     const token = usuario.token
 
     async function buscarPostagemPorId(id: string) {
-        await buscar('/postagens/${id}', setPostagem, {
+    await buscar(`/postagens/${id}`, setPostagem, {
             headers: {
                 Authorization: token,
             },
@@ -32,7 +32,7 @@ function FormularioPostagem() {
     }
 
     async function buscarTemaPorId(id: string) {
-        await buscar('/temas/${id}', setTema, {
+        await buscar(`/temas/${id}`, setTema, {
             headers: {
                 Authorization: token,
             },
