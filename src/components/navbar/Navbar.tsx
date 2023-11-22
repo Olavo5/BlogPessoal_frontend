@@ -14,10 +14,6 @@ function Navbar() {
         navigate('/login')
     }
 
-    function cadastrartema() {
-        navigate('/temas')
-    }
-
 
     return (
         <>
